@@ -26,8 +26,6 @@ export const Main = styled.div`
     height: 300px;
     perspective: 1000px;
     font-family: "Poppins", sans-serif;
-
-  
   }
 
   .title {
@@ -87,6 +85,10 @@ export const Main = styled.div`
     color: black;
     transform: rotateY(180deg);
   }
+
+  @media screen and (min-device-width: 320px) and (max-device-width: 425px) {
+    width: 90%;
+  }
 `;
 
 export const Content = styled.div`
@@ -96,8 +98,8 @@ export const Content = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media screen and (min-device-width: 320px) and (max-device-width: 896px){
-      display: flex;
-      flex-direction: column;
-    }
+  @media screen and (min-device-width: 320px) and (max-device-width: 425px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;

@@ -13,10 +13,6 @@ export const Main = styled.div`
     font-weight: 800;
     font-style: normal;
     color: #03045e;
-
-    @media screen and (min-device-width: 320px) and (max-device-width: 896px){
-      font-size: 35px;
-    }
   }
 
   p {
@@ -25,16 +21,19 @@ export const Main = styled.div`
     font-weight: 400;
     font-style: normal;
     color: #03045e;
+  }
 
-    @media screen and (min-device-width: 320px) and (max-device-width: 896px){
+  @media screen and (min-device-width: 320px) and (max-device-width: 425px) {
+    width: 70%;
+    font-size: 15px;
+    h1 {
+      font-size: 35px;
+    }
+
+    p {
       font-size: 14px;
       text-align: center;
     }
-  }
-
-  @media screen and (min-device-width: 320px) and (max-device-width: 896px){
-    width: 70%;
-    font-size: 15px;
   }
 `;
 
@@ -49,5 +48,7 @@ export const BackGround = styled.div`
 
   background-color: #d4e0ff;
 
-  @media screen and (min-device-width: 320px) and (max-device-width: 896px){}
+  @media screen and (min-device-width: 320px) and (max-device-width: 425px) {
+    padding: 0 5px ;
+  }
 `;

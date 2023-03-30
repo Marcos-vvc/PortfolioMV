@@ -7,6 +7,11 @@ export const Main = styled.div`
   align-items: center;
   min-height: 70vh;
   width: 1200px;
+  overflow: hidden;
+
+  @media screen and (min-device-width: 320px) and (max-device-width: 425px) {
+    width: 100%;
+  }
 `;
 
 export const Text = styled.div`
@@ -32,12 +37,12 @@ export const Text = styled.div`
     color: #ffce53;
   }
 
-  @media screen and (min-device-width: 320px) and (max-device-width: 896px) {
+  @media screen and (min-device-width: 320px) and (max-device-width: 425px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 30%;
+    width: 70%;
     font-size: 15px;
   }
 `;
@@ -56,7 +61,8 @@ export const Skill = styled.div`
 
   @media screen and (min-device-width: 320px) and (max-device-width: 896px) {
     display: grid;
-    grid-template-columns: repeat(3, 130px);
+    grid-template-columns: repeat(2, 150px);
+    width: 100%;
   }
 `;
 export const Photo = styled.div`

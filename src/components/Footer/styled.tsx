@@ -6,8 +6,7 @@ export const Main = styled.div`
   p {
     color: #d6dffc;
 
-
-    @media screen and (min-device-width: 320px) and (max-device-width: 896px){
+    @media screen and (min-device-width: 320px) and (max-device-width: 425px) {
       font-size: 12px;
     }
   }

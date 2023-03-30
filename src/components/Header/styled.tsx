@@ -11,6 +11,8 @@ export const ContainerHeader = styled.div`
   top: 0;
   z-index: 10;
   backdrop-filter: blur(10px);
+  overflow: hidden;
+  margin-bottom: 20px;
 
   p {
     color: #ffce53;
@@ -23,17 +25,12 @@ export const ContainerHeader = styled.div`
     text-decoration: none;
   }
 
-  @media screen and (max-width: 896px) {
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 10px;
-
+  @media screen and (max-width: 425px) {
     p {
-      font-size: 20px;
+      font-size: 15px;
       margin-right: 0;
       margin-bottom: 10px;
     }
-
   }
 `;
 
@@ -49,21 +46,18 @@ export const ImgAvatar = styled.div`
     height: 65px;
   }
 
-  @media screen and (max-width: 896px) {
-    display: none;
+  @media screen and (max-width: 425px) {
+    img {
+      width: 40px;
+      height: 45px;
+    }
   }
 `;
 export const Options = styled.div`
   display: flex;
   gap: 60px;
 
-  @media screen and (max-width: 896px) {
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-
-    div {
-      margin-right: 0;
-    }
+  @media screen and (max-width: 425px) {
+    gap: 20px;
   }
 `;

@@ -8,8 +8,8 @@ export const Main = styled.div`
   width: 1200px;
   align-items: center;
 
-  @media screen and (min-device-width: 320px) and (max-device-width: 896px) {
-    width: 100%;
+  @media screen and (min-device-width: 320px) and (max-device-width: 425px) {
+    width: 80%;
   }
 `;
 
@@ -23,7 +23,7 @@ export const Content = styled.div`
   background-color: #d4e0ff;
   border-radius: 10px;
 
-  @media screen and (min-device-width: 320px) and (max-device-width: 896px) {
+  @media screen and (min-device-width: 320px) and (max-device-width: 425px) {
     min-height: 40vh;
     width: 95%;
   }
@@ -39,14 +39,14 @@ export const IntoImg = styled.div`
     scale: 1.2;
   }
 
-  @media screen and (min-device-width: 320px) and (max-device-width: 896px) {
+  @media screen and (min-device-width: 320px) and (max-device-width: 425px) {
     display: none;
   }
 `;
 
 export const Text = styled.div`
   display: flex;
-  /* text-align: left; */
+  text-align: left;
   margin-left: 100px;
   flex-direction: column;
   width: 60%;
@@ -57,31 +57,22 @@ export const Text = styled.div`
     margin: 0;
     font-size: 50px;
     font-weight: 800;
-
-    @media screen and (min-device-width: 320px) and (max-device-width: 896px) {
-      font-size: 25px;
-      font-weight: 800;     
-      justify-content: center;
-      align-items: center;
-    }
   }
 
   p {
     margin: 0;
     font-weight: 500;
     font-size: 28px;
-
-    @media screen and (min-device-width: 320px) and (max-device-width: 896px) {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      font-size: 20px;
-      margin-right: 58px;
-    }
   }
 
- 
+  @media screen and (min-device-width: 320px) and (max-device-width: 425px) {
+    margin-left: 15px;
+
+    width: 100%;
+    h1 {
+      font-size: 35px;
+    }
+  }
 `;
 
 export const StyledButton = styled.button`
